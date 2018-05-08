@@ -137,10 +137,10 @@ public class CascadingUtil {
     // Get the existing serializations
     List<String> strings = new ArrayList<String>();
 
-    String existing = new JobConf().get("io.serializations");
-    if (existing != null) {
-      strings.add(existing);
-    }
+//    String existing = new JobConf().get("io.serializations");
+//    if (existing != null) {
+//      strings.add(existing);
+//    }
 
     // Append our custom serializations
     for (Class<? extends Serialization> klass : serializations) {
